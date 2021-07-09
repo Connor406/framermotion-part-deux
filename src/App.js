@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import Fade from './Fade'
+import Slide from './Slide'
 import "./styles.css";
 
 export default function App() {
@@ -11,12 +12,26 @@ export default function App() {
       </header>
       <main className="layout">
         <button onClick={() => setIsToggled(!isToggled)}>Toggle</button>
-        {isToggled && (
-          <div className="card">
-            <h4>Post Number one</h4>
-            <p>this is inside the card</p>
-          </div>
-        )}
+        <Fade isActive={isToggled} >
+            <div className="card">
+              <h4>Post Number one</h4>
+              <p>this is inside the card</p>
+            </div>
+        </Fade>
+        {/* Basic Slide */}
+        <Slide isActive={isToggled} >
+            <div className="card">
+              <h4>Post Number one</h4>
+              <p>this is inside the card</p>
+            </div>
+        </Slide>
+        {/* Cooler/more fun Slide */}
+        <Slide direction={-1} distance={1000} isActive={isToggled} >
+            <div className="card">
+              <h4>Post Number one</h4>
+              <p>this is inside the card</p>
+            </div>
+        </Slide>
       </main>
     </div>
   );

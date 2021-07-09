@@ -7,8 +7,8 @@ export default function App() {
   const [isToggled, setIsToggled] = useState(false);
   return (
     <div className="App">
-      <AbstractionApp/>
-      {/* <GridApp/> */}
+      {/* <AbstractionApp/> */}
+      <GridApp/>
     </div>
   );
 }

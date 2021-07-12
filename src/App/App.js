@@ -5,6 +5,8 @@ import DrawerApp from "../Drawer/DrawerApp";
 import GridApp from "../Grid/GridApp";
 import ModalApp from "../Modal/ModalApp";
 import RouterApp from "../Router/RouterApp";
+import SquareApp from "../RepeatAnimations/SquareApp";
+import CountdownApp from "../Countdown/CountdownApp";
 import "./styles.css";
 
 export default function App() {
@@ -16,7 +18,9 @@ export default function App() {
       {/* <DrawerApp /> */}
       {/* <DragApp /> */}
       {/* <ModalApp /> */}
-      <RouterApp />
+      {/* <RouterApp /> */}
+      {/* <SquareApp /> */}
+      <CountdownApp />
     </div>
   );
 }

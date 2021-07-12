@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import {motion} from 'framer-motion'
-import Fade from './Fade'
-import Slide from './Slide'
-import "./styles.css";
+import { motion } from "framer-motion";
+import Fade from "./Fade";
+import Slide from "./Slide";
+import "../App/styles.css";
 
 export default function AbstractionApp() {
   const [isToggled, setIsToggled] = useState(false);
@@ -13,8 +13,8 @@ export default function AbstractionApp() {
       </header>
       <main className="layout">
         <button onClick={() => setIsToggled(!isToggled)}>Toggle</button>
-        <motion.div layout className='card' >
-          <motion.h3 layout >Post one</motion.h3>
+        <motion.div layout className="card">
+          <motion.h3 layout>Post one</motion.h3>
           {isToggled && (
             <p>
               Put a bird on it live-edge vice laborum eiusmod street art lorem
@@ -32,7 +32,6 @@ export default function AbstractionApp() {
     </div>
   );
 }
-
 
 /*        <Slide isActive={isToggled} >
             <div className="card">

@@ -3,7 +3,6 @@ import Drawer from "./Drawer";
 import "./drawerStyles.css";
 
 export default function DrawerApp() {
-  const [isActive, setIsActive] = useState(false);
   return (
     <div className="App">
       <header>
@@ -12,8 +11,7 @@ export default function DrawerApp() {
 
       <div className="layout">
         <h3>Blog Posts</h3>
-        <button onClick={() => setIsActive(true)}>Open drawer</button>
-        <Drawer isActive={isActive} setIsActive={setIsActive}>
+        <Drawer>
           <h1>drawer here</h1>
         </Drawer>
 

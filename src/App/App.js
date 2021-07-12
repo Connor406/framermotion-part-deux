@@ -4,6 +4,7 @@ import DragApp from "../Drag&Drop/DragApp";
 import DrawerApp from "../Drawer/DrawerApp";
 import GridApp from "../Grid/GridApp";
 import ModalApp from "../Modal/ModalApp";
+import RouterApp from "../Router/RouterApp";
 import "./styles.css";
 
 export default function App() {
@@ -14,7 +15,8 @@ export default function App() {
       {/* <GridApp /> */}
       {/* <DrawerApp /> */}
       {/* <DragApp /> */}
-      <ModalApp />
+      {/* <ModalApp /> */}
+      <RouterApp />
     </div>
   );
 }
